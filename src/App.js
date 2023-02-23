@@ -5,6 +5,7 @@ import Root from "./pages/Root";
 import NotFound from "./pages/NotFound";
 import Videos from "./pages/Videos";
 import Home from "./pages/Home";
+import VideoDetail from "./pages/VideoDetail";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,12 @@ const router = createBrowserRouter([
       //자식들의 경로
       { index: true, element: <Home /> }, //최상위 경로(/) index는 home이다.
       {
-        path: "/vidoes",
+        path: "/videos",
         element: <Videos />,
+      },
+      {
+        path: "/videos/:videoId",
+        element: <VideoDetail />,
       },
     ],
   },

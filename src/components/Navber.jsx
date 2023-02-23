@@ -5,7 +5,7 @@ export default function Navber() {
   return (
     <nav>
       <Link to="/">Home</Link>
-      <Link to="/vidoes">Videos</Link>
+      <Link to="/videos">Videos</Link>
     </nav>
   );
 }
